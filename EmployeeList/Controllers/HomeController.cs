@@ -36,8 +36,26 @@ namespace EmployeeList.Controllers
             return View(emplst);
         }
 
-        public ActionResult Create()
+        public IActionResult Create()
         {
+            return View();
+        }
+
+        /// <summary>
+        /// Save Data into table
+        /// </summary>
+        /// <param name="Ev"></param>
+        /// <returns></returns>
+        [HttpPost]
+       
+        public IActionResult Create(EmployeeViewModel Ev)
+        {
+            if (Ev !=null)
+            {
+                _dbContext.EmployeeViewModel.Add(Ev);
+
+                _dbContext.SaveChanges();
+            }
             return View();
         }
 

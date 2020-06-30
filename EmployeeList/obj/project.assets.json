@@ -8219,11 +8219,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Core Projects\\EmployeeList\\EmployeeList.csproj",
+      "projectUniqueName": "D:\\ASP.NET-Core\\EmployeeList\\EmployeeList.csproj",
       "projectName": "EmployeeList",
-      "projectPath": "D:\\Core Projects\\EmployeeList\\EmployeeList.csproj",
+      "projectPath": "D:\\ASP.NET-Core\\EmployeeList\\EmployeeList.csproj",
       "packagesPath": "C:\\Users\\yogesh.vedpathak\\.nuget\\packages\\",
-      "outputPath": "D:\\Core Projects\\EmployeeList\\obj\\",
+      "outputPath": "D:\\ASP.NET-Core\\EmployeeList\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
