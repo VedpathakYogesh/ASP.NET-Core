@@ -52,8 +52,23 @@ namespace EmployeeList.Controllers
         {
             if (Ev !=null)
             {
-                _dbContext.EmployeeViewModel.Add(Ev);
+                var tblEmployee = new tblEmployee()
+                {
+                    EmployeeID = Ev.EmployeeID,
+                    EmployeeName = Ev.EmployeeName,
+                    PhoneNumber = Ev.PhoneNumber,
+                 //   Skil = Ev.Skill,
+                    YearsExperience = Ev.YearsExperience
+                        
+                };
 
+                var tblSkill = new tblSkill()
+                {
+                    Title = Ev.Skill
+                };
+
+                _dbContext.tblEmployees.Add(tblEmployee);
+                _dbContext.tblSkills.Add(tblSkill);
                 _dbContext.SaveChanges();
             }
             return View();
